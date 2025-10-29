@@ -1,0 +1,29 @@
+[
+  {
+    "id": "project-1",
+    "title": "Mini Tool",
+    "description": "A compact utility that helps you perform quick transformations in the browser. Built with vanilla JS, focused on UX and small size.",
+    "cover": "assets/project1.jpg",
+    "tags": ["javascript", "tool"],
+    "demoUrl": "#",
+    "repoUrl": "#"
+  },
+  {
+    "id": "project-2",
+    "title": "Static Site Template",
+    "description": "A multi-page static site template for hobby projects and portfolios. Easy to host and customize.",
+    "cover": "assets/project2.jpg",
+    "tags": ["html", "css", "static"],
+    "demoUrl": "#",
+    "repoUrl": "#"
+  },
+  {
+    "id": "project-3",
+    "title": "Canvas Experiment",
+    "description": "Prototypes and experiments using Canvas and Web APIs — motion, drawing and interactive visuals.",
+    "cover": "assets/project3.jpg",
+    "tags": ["canvas", "experiment", "graphics"],
+    "demoUrl": "#",
+    "repoUrl": "#"
+  }
+]

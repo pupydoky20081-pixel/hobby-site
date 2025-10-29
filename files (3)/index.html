@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobby Project — Home</title>
+
+  <!-- Bootstrap CSS (responsive framework) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <!-- Navbar (responsive with offcanvas for small screens) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="fs-5 text-accent">My Hobby Site</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mainMenuLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link btn-outline-link" href="login.html">Login</a></li>
+          </ul>
+
+          <div class="mt-3 d-flex gap-2">
+            <button id="themeToggle" class="btn btn-sm btn-secondary" title="Toggle light / dark">Toggle theme</button>
+            <input id="globalSearch" class="form-control form-control-sm" placeholder="Search posts / projects" aria-label="Search site">
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal navbar links for larger screens -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto d-none d-lg-flex align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link btn-outline-link" href="login.html">Login</a></li>
+          <li class="nav-item ms-2 d-flex">
+            <input id="globalSearchDesktop" class="form-control form-control-sm" placeholder="Search posts / projects" style="width:220px">
+            <button id="themeToggleDesktop" class="btn btn-sm btn-secondary ms-2" title="Toggle theme">☼</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <!-- Carousel hero (Bootstrap) -->
+    <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-3 shadow-sm">
+        <div class="carousel-item active">
+          <div class="d-flex flex-column flex-lg-row align-items-center p-4 gap-4">
+            <div class="flex-fill">
+              <h2 class="display-6">Welcome to my hobby site</h2>
+              <p class="lead">A responsive multi-page static site built with Bootstrap and vanilla JS. Browse projects, gallery, blog posts and try the demo login.</p>
+              <p>
+                <a class="btn btn-accent me-2" href="projects.html">See Projects</a>
+                <a class="btn btn-outline-light" href="blog.html">Read Blog</a>
+              </p>
+            </div>
+            <div class="d-none d-lg-block hero-image flex-shrink-0"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex flex-column flex-lg-row align-items-center p-4 gap-4">
+            <div class="flex-fill">
+              <h2 class="display-6">Interactive widgets & responsive layout</h2>
+              <p class="lead">This update adds Bootstrap responsiveness, a mobile offcanvas menu, carousel hero, theme toggle, client-side search, and improved gallery lightbox.</p>
+              <p><a class="btn btn-accent" href="gallery.html">Open Gallery</a></p>
+            </div>
+            <div class="d-none d-lg-block hero-image-2 flex-shrink-0"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card h-100 bg-card">
+          <div class="card-body">
+            <h5 class="card-title">Latest Project</h5>
+            <p class="card-text">Mini web tool built with vanilla JS. Check Projects page for demos and links.</p>
+            <a href="projects.html" class="link-accent">Open Projects →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-card">
+          <div class="card-body">
+            <h5 class="card-title">Featured Gallery</h5>
+            <p class="card-text">Snapshots from experiments. The gallery uses a responsive grid and modal lightbox.</p>
+            <a href="gallery.html" class="link-accent">Open Gallery →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 bg-card">
+          <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <p class="card-text">Want to reach out? The contact form shows bootstrap validation and a demo submit flow.</p>
+            <a href="contact.html" class="link-accent">Contact →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark text-muted py-3 mt-4">
+    <div class="container text-center">
+      <small>© <span id="year"></span> My Hobby Site — Built with Bootstrap & vanilla JS</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+</html>

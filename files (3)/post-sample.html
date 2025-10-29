@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Post — My Hobby Site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Hobby Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenuPost" aria-controls="mainMenuPost" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mainMenuPost">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <article class="card bg-card">
+      <div class="card-body">
+        <h1>Getting started with this hobby site</h1>
+        <p class="muted">2025-10-29 • 3 min read</p>
+
+        <p>This sample post shows how you can add blog content as static HTML pages. Create a new HTML file for each post, keep metadata at the top and link them from blog.html.</p>
+
+        <h2>Notes</h2>
+        <ul>
+          <li>Static posts are easiest to manage for small hobby sites.</li>
+          <li>If you want many posts, consider a simple build script or a static site generator later.</li>
+        </ul>
+
+        <p><a href="blog.html" class="link-accent">← Back to blog</a></p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="bg-dark text-muted py-3 mt-4">
+    <div class="container text-center">
+      <small>© <span id="year-6"></span> My Hobby Site</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
